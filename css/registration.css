@@ -1,0 +1,66 @@
+
+.form-row {
+	margin-bottom: 8px;
+	padding-top: 15px;
+}
+
+.form-row input {
+	float: right;
+	height: 19px;
+	line-height: 19px;
+	margin: 0px;
+	padding: 0px 5px;
+	width: 287px;
+	border: 1px solid grey;
+}
+
+.reg-form {
+	width: 416px;
+	margin: 0 auto;
+	padding-bottom: 40px;
+}
+
+.form-row textarea {
+	height: 90px;
+    line-height: 16px;
+    font-size: 12px;
+    padding: 0px 5px;
+    width: 404px;
+    border: 1px solid grey;
+}
+
+.form-row input[type="email"]:focus{
+	background-color: lightblue;
+	color: darkred;
+}
+
+.form-row input[id='form_fname']{
+	text-transform: capitalize;
+}
+
+.form-row input[id='form_sname']{
+	text-transform: capitalize;
+}
+
+.form-row input[type=submit] {
+	padding:5px;
+	margin-bottom: 5px;
+	height:25px;
+	width:100%;
+	line-height: 10px;
+	background: #00d0c5;
+	color: white;
+	font-weight: 600;
+}
+
+.form-row input[type="submit"]:hover {
+	background-color: #0095b0;
+}
+
+.form-row input[type="checkbox"]:hover {
+	border: 1px dashed black; 
+}
+
+.form-row input[type="radio"]:hover {
+	border: 1px dashed black; 
+}

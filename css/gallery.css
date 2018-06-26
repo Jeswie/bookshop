@@ -1,0 +1,18 @@
+
+
+.content{
+	padding: 20px;
+	margin: 0px;
+	background: url(../images/backgorund-gallery.jpg) repeat-y;
+}
+
+.gallery-photo {
+    width: 40%;
+    margin-top: 20px;
+    border: 8px solid #00d0c5;
+}
+
+.gallery-photo:hover{
+	border: none;
+	padding: 8px;
+}

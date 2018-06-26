@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+
+
+
+</head>
+<body>
+    
+    <div class="header">
+        <div class="container">
+        <ul class="menu">
+            <li><a href="index.html">About</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="goods.html">Goods</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+        </div>
+    </div>
+   
+    <div class="content">
+        <div class="container">
+
+            <form method='post' class="form-asking">
+                
+                <div class="map">
+                    <h4>Adress</h4>
+                    <ul>
+                        <li class="otstyp"><a onclick="f_ajax(1)">&laquo;National Aerospace University &laquo;KhAI&raquo;</a></li>
+                        <li class="otstyp"><a onclick="f_ajax(2)">&laquo;TRK Ukraine&raquo;</a></li>
+                    </ul>
+
+                    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:350px;width:416px;'><div id='gmap_canvas' style='height:350px;width:416px;'></div><div><small><a href="embedgooglemaps.com/ru">https://embedgooglemaps.com/ru/</a></small></div><div><small><a href="http://mrpromokod.ru/">ww://mrpromokod.ru</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(49.9954639,36.33903989999999),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(49.9954639,36.33903989999999)});infowindow = new google.maps.InfoWindow({content:'<strong>Пункт выдачи</strong><br>ТРЦ Украина<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+
+                     /*
+                        function f_ajax(adress) {
+                            $.ajax({
+                                type: "POST",
+                                url: "map.php",
+                                data: {adress: adress},
+                                dataType: 'JSON',
+                                success: function (response) {
+                                    var x = parseFloat(response.x);
+                                    var y = parseFloat(response.y);
+                                    var a = (response.a);
+                                    var b = (response.b);
+                                    var c = (response.c);
+                                    var d = (response.d);
+                                    init_map(x, y, a, b, c, d);
+                                }
+                            });
+                        }
+                        f_ajax(1);
+                        
+                        google.maps.event.addDomListener(window, 'load', init_map);
+                        */
+
+                    </script>
+                    </div>           
+
+                <p>Author name: Kateryna Plytnyk <br></p>
+                <p>Phone: +380991966027 <br></p>
+                <p>e-mail: katylin482@gmail.com <br></p>
+                
+                <div class="ask-form">
+                <p>Have a question? Then ask!</p>
+                    <div class='ask-form'>
+                        <label for='form_fname'>Name: </label>
+                        <input type='text' id='form_fname' name='first_name'>
+                      </div>
+                      <br>
+
+                    <div class='ask-form'>
+                        <label for='form_phone'>Phone: </label>
+                        <input type='text' id='form_phone' name='phone'>
+                    </div>
+                    <br>
+
+                    <label>Ask a question: </label> <br>
+                    <textarea id="question" name="question"></textarea>
+                 </div>
+
+                <input type="submit" value="Ask">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p> &copy Copyright 2018</p>
+        </div>  
+    </footer>
+
+</body>
+</html>

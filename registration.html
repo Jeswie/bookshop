@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/registration.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+                <ul class="menu">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="goods.html">Goods</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <img src="images/msin.png" id="back-photo">
+            <form method='post' class='reg-form'>
+
+                    <div class='form-row'>
+                        <label for='form_fname'>First Name: </label>
+                        <input type='text' id='form_fname' name='first_name'>
+                      </div>
+            
+                      <div class='form-row'>
+                        <label for='form_sname'>Second Name: </label>
+                        <input type='text' id='form_sname' name='second_name'>
+                    </div>
+            
+                    <div class='form-row'>
+                        <label for='form_email'>Email: </label>
+                        <input type='email' id='form_email' name='email'>
+                    </div>
+                    <div class='form-row'>
+                        <label for='passw'>Password: </label>
+                        <input type='password' id='passw' name='password'>
+                    </div>
+
+                    <div class='form-row'>
+                            <label for='form_adress_site'>Site adress </label>
+                            <input type='text' id='form_adress_site' name='adress_site' value="http://">
+                    </div>
+                    
+                    <div class='form-row'>
+                            <p for='form_gender'><input name="gender" type='radio' id='form_gender_male' name='gender_male' checked> Male</p>
+                            <p for='form_gender'><input name="gender" type='radio' id='form_gender_female' name='gender_female'> Female</p>
+                    </div>
+
+                    <div class='form-row'>
+                            <label for="date_of_birth">Date of birth: </label>
+                            <input type="date" id="form_date_of_birth" name="date_of_birth"/>
+                    </div>
+            
+                    <div class='form-row'>
+                        <label for='form_phone'>Phone: </label>
+                        <input type='text' id='form_phone' name='phone'>
+                    </div>
+            
+                    <div class='form-row'>
+                        <label for='form_about'>About myself: </label>
+                        <textarea id='form_about' name='about'></textarea>
+                    </div>
+
+                     <p for='get-news'><input name="get-news" type='checkbox' id='get_news' name='get-news' checked> Do you want to get news on yours e-mail?</p>
+            
+                    <div class="form-row">
+                        <input type="submit" id="registr" value='Registration'>
+                    </div>
+
+                    <div class="form-row">
+                        <input type="submit" id="clearall" value='Clear all'>
+                    </div>
+            
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p> &copy Copyright 2018</p>
+        </div>  
+    </footer>
+</body>
+</html>
